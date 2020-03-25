@@ -1,4 +1,4 @@
-* Given {ip, time, resource}, this code translate into the {ip, hid}, {resource, rid} table and its inverse.
-* Then, {hid, rid, 1} tuple will be trained by FunkSVD to obtain the M=HR.
+* Given [ip, time, resource], this code translate it into a mapping table [ip, hid], [resource, rid] and its inverse.
+* Then, [hid, rid, 1] tuple can be built and trained to get $M=HR$ by the FunkSVD algorithm.
 
-* Once a new IP (user) click a dataset, the top-N dataset can be recommended thereafter.
+* $M_{ij}$ represents the user preference of each item. Once a new IP (user) click a dataset, the top-N dataset can be recommended thereafter.
